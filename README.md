@@ -45,9 +45,9 @@ classDiagram
         +getDescricao()
     }
 
-    Usuario "1" *-- "1" Conta
-    Usuario "1" *-- "*" Funcionalidade
-    Usuario "1" *-- "*" Cartao
-    Usuario "1" *-- "*" Novidade
+    Cliente "1" *-- "1" Conta
+    Cliente "1" *-- "*" Funcionalidade
+    Cliente "1" *-- "*" Cartao
+    Cliente "1" *-- "*" Novidade
 
 ```
