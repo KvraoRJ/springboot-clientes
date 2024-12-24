@@ -28,7 +28,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Throwable.class)
     public ResponseEntity<String> handleUnexpectedException(Throwable unexpectedException) {
         var mensagem ="Ocorreu um erro interno. Favor verificar os logs da app";
-        logger.error(mensagem,unexpectedException);
+        logger.error(mensagem + ": " + unexpectedException.getMessage(),unexpectedException);
         return new ResponseEntity<>(mensagem, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
