@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: postgresql://postgres:YkpOxevdAHuupozaxmaxERQgpfpUfFYo@postgres.railway.internal:5432/railway
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
